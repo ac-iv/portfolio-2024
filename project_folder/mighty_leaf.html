@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Layout</title>
+    <title>Mighty Leaf Package Redesign</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" type="image/x-icon" href="/img/SketchLogo.png">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="projectstyle.css">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="projectstyle.css">
+    <style>
+        
+        
+        .viewport-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
 
@@ -27,72 +35,19 @@
             <li><a href="../resume.html">resume</a></li>
         </ul>
     </div>
-
-    <!-- Main Content Image Carousel -->
-    <div class="carousel">
-        <div class="slides">
-            <!-- Add more slides as needed -->
-            <div class="slide">
-                <img src="../img/confessional/1.jpeg" alt="Project 1">
-            </div>
-            <div class="slide">
-                <img src="../img/confessional/2.jpeg" alt="Project 2">
-            </div>
-            <div class="slide">
-                <img src="../img/confessional/3.jpeg" alt="Project 3">
-            </div>
-        </div>
-
-        <div class="carousel-controls">
-            <button class="prev" onclick="prevSlide()">&#10094;</button>
-            <button class="next" onclick="nextSlide()">&#10095;</button>
-        </div>
+<br>
+    <!-- Viewport Section -->
+    <div class="viewport-container">
+        <iframe title="Mighty Leaf Package Redesign" allowfullscreen style="border:none;" width="600" height="400" src="https://www.pacdora.com/share?filter_url=psd1rfkwaf&source=code"></iframe>
     </div>
 
     <!-- Description -->
     <div class="text">
-        <h5>Overview of Mirrored Confessional</h5>
-        <p><em>Mirrored Confessional</em> is a deeply personal project that explores the intersection of identity, vulnerability, and community within the LGBTQ+ space. Through a series of multimedia installations, the project creates a safe, reflective environment for individuals to confront their truths and share their experiences. The concept revolves around the idea of confession — not in the traditional religious sense, but as a form of emotional release and self-acceptance, fostering connections within a community that thrives on openness and mutual understanding.</p>
+        <h5>mighty leaf package redesign</h5>
+        <p>the redesigned packaging for mighty leaf tea embodies a balance of elegance and eco-consciousness, marrying aesthetics with functionality. inspired by the natural ingredients and the brand's commitment to sustainability, this new design reduces waste without compromising on the visual appeal that tea lovers cherish.</p>
 
-        <h5>Details and Development</h5>
-        <p>This project was developed through extensive research and collaboration with members of the LGBTQ+ community, ensuring that each element resonates with shared experiences. The central piece is a mirrored booth, where participants can leave anonymous confessions or personal reflections. These are then woven into the broader narrative of the project, highlighting the diversity and commonality of experiences within the community. The booth also features interactive components, such as voice recordings and projections, to deepen the immersive nature of the experience.</p>
-        <p>Key elements include:</p>
-        <ul>
-            <li><strong>Manifesto:</strong> A carefully crafted declaration that sets the tone for the project, outlining the importance of honest self-expression and the power of shared experiences in building community.</li>
-            <li><strong>Zine – <em>The Holy Bible of Homosexuality</em>:</strong> A provocative, thought-provoking zine that reimagines religious texts through a queer lens. It challenges traditional narratives and offers an alternative guide to self-acceptance, identity, and love.</li>
-            <li><strong>Interactive Installations:</strong> The booth, equipped with mirrors and projections, allows participants to engage not only with their own reflections but also with the stories of others, creating a continuous dialogue of shared experiences.</li>
-        </ul>
-
-        <p><a href="URL_TO_FULL_CASE_STUDY">Explore the full case study and process here.</a></p>
+        <p>with a focus on simplicity and user experience, the updated look features clear, modern lines that highlight the purity of the product inside. the use of recyclable materials underscores mighty leaf's dedication to the environment, while the streamlined visuals make each blend easily distinguishable. this package redesign isn't just a fresh look—it's a statement of values, innovation, and a commitment to a more sustainable future.</p>
     </div>
-
-    <script>
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.slide');
-
-        function showSlide(index) {
-            if (index >= slides.length) {
-                currentSlide = 0;
-            } else if (index < 0) {
-                currentSlide = slides.length - 1;
-            } else {
-                currentSlide = index;
-            }
-            const offset = -currentSlide * 100;
-            document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
-        }
-
-        function nextSlide() {
-            showSlide(currentSlide + 1);
-        }
-
-        function prevSlide() {
-            showSlide(currentSlide - 1);
-        }
-
-        // Initialize the carousel by showing the first slide
-        showSlide(currentSlide);
-    </script>
 
 </body>
 </html>

@@ -3,13 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Layout</title>
+    <title>Don't Worry Dear, I Am Immortal</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" type="image/x-icon" href="/img/SketchLogo.png">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="projectstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: "Pixelify Sans", system-ui;
+        }
 
+        .header-image {
+            width: 100%;
+            margin-top: 2%;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+        }
+
+        .nav-bar {
+            padding-top: 2%;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .nav-bar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-bar ul li {
+            font-family: Arial, Helvetica, sans-serif;
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        .nav-bar ul li a {
+            text-decoration: none;
+            color: #95a6b4;
+            font-weight: 100;
+            font-size: 13px;
+            font-variant-caps: small-caps;
+        }
+
+        .nav-bar ul li a:hover {
+            color: #b49595;
+            font-weight: bold;
+        }
+
+        .carousel {
+            padding-top: 5%;
+            position: relative;
+            margin: auto;
+            overflow: hidden;
+            width: 40vh;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            transition: opacity 1s;
+            position: relative;
+            margin-bottom: -7%;
+        }
+
+        .slide img {
+            width: 80%;
+            padding: 10%;
+            display: block;
+        }
+
+        .carousel-controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .prev, .next {
+            background-color: rgb(255, 255, 255);
+            margin-top: 15%;
+            color: rgb(0, 0, 0);
+            font-size: 14pt;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .text {
+            margin-top: 2%;
+            color: #000000;
+            font-size: 15px;
+            padding: 10px;
+            font-weight: 100;
+            padding-left: 3%;
+            padding-right: 3%;
+            text-align: justify;
+        }
+
+        h5 {
+            font-size: 12pt;
+            font-weight: bold;
+            color: #95a6b4;
+            text-align: center;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 10pt;
+            font-weight: 100;
+            padding: 2%;
+        }
+    </style>
 </head>
 <body>
 
@@ -31,16 +143,13 @@
     <!-- Main Content Image Carousel -->
     <div class="carousel">
         <div class="slides">
-            <!-- Add more slides as needed -->
             <div class="slide">
-                <img src="../img/confessional/1.jpeg" alt="Project 1">
+                <img src="../img/immortalbook-2.jpg" alt="Don't Worry Dear, I Am Immortal Image 1">
             </div>
             <div class="slide">
-                <img src="../img/confessional/2.jpeg" alt="Project 2">
+                <img src="../img/bookpages.jpg" alt="Don't Worry Dear, I Am Immortal Image 2">
             </div>
-            <div class="slide">
-                <img src="../img/confessional/3.jpeg" alt="Project 3">
-            </div>
+            
         </div>
 
         <div class="carousel-controls">
@@ -51,19 +160,10 @@
 
     <!-- Description -->
     <div class="text">
-        <h5>Overview of Mirrored Confessional</h5>
-        <p><em>Mirrored Confessional</em> is a deeply personal project that explores the intersection of identity, vulnerability, and community within the LGBTQ+ space. Through a series of multimedia installations, the project creates a safe, reflective environment for individuals to confront their truths and share their experiences. The concept revolves around the idea of confession — not in the traditional religious sense, but as a form of emotional release and self-acceptance, fostering connections within a community that thrives on openness and mutual understanding.</p>
+        <h5>Don't Worry Dear, I Am Immortal</h5>
+        <p><em>Don't Worry Dear, I Am Immortal</em> is a personal exploration into the themes of mortality and legacy through the lens of font design. The project delves into the notion that while our lives are finite, creativity has the power to transcend time. By designing a font that mimics handwriting, this work aims to symbolically preserve a part of the creator's identity for future generations, extending their existence beyond the boundaries of mortality.</p>
 
-        <h5>Details and Development</h5>
-        <p>This project was developed through extensive research and collaboration with members of the LGBTQ+ community, ensuring that each element resonates with shared experiences. The central piece is a mirrored booth, where participants can leave anonymous confessions or personal reflections. These are then woven into the broader narrative of the project, highlighting the diversity and commonality of experiences within the community. The booth also features interactive components, such as voice recordings and projections, to deepen the immersive nature of the experience.</p>
-        <p>Key elements include:</p>
-        <ul>
-            <li><strong>Manifesto:</strong> A carefully crafted declaration that sets the tone for the project, outlining the importance of honest self-expression and the power of shared experiences in building community.</li>
-            <li><strong>Zine – <em>The Holy Bible of Homosexuality</em>:</strong> A provocative, thought-provoking zine that reimagines religious texts through a queer lens. It challenges traditional narratives and offers an alternative guide to self-acceptance, identity, and love.</li>
-            <li><strong>Interactive Installations:</strong> The booth, equipped with mirrors and projections, allows participants to engage not only with their own reflections but also with the stories of others, creating a continuous dialogue of shared experiences.</li>
-        </ul>
-
-        <p><a href="URL_TO_FULL_CASE_STUDY">Explore the full case study and process here.</a></p>
+        <p>This book captures a journey of self-reflection, where the act of creation itself becomes a statement of defiance against the inevitable passage of time. The accompanying poem within the book serves as a meditation on life, creation, and the human desire to leave an indelible mark on the world. It is a celebration of how art and design can keep one's spirit alive long after they are gone, making the intangible tangible.</p>
     </div>
 
     <script>
